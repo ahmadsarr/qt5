@@ -16,7 +16,13 @@ TEMPLATE = app
 
 
 SOURCES += main.cpp \
-    utilisateur.cpp
+    utilisateur.cpp \
+    carte.cpp \
+    administrateur.cpp \
+    jeudecartes.cpp
 
 HEADERS += \
-    utilisateur.h
+    utilisateur.h \
+    carte.h \
+    administrateur.h \
+    jeudecartes.h
