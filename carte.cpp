@@ -1,6 +1,6 @@
 #include "carte.h"
 using namespace  std;
-Carte::Carte(string nom,string reponse,int difficulte=1):question(question),reponse(reponse),difficulte(difficulte)
+Carte::Carte(string question,string reponse,int difficulte):question(question),reponse(reponse),difficulte(difficulte)
 {
 }
 void Carte::setQuestion(string question){this->question=question;}

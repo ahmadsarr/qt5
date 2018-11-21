@@ -8,13 +8,13 @@ private:
     std::string reponse;
     int difficulte;
 public:
-    Carte(std::string,std::string,int);
+    Carte(std::string,std::string,int diff=1);
     void setQuestion(std::string);
     void setReponse(std::string);
     void setDifficulte(int);
     int getDifficulte();
-    std::string getReponse();
-    std::string getQuestion();
+    inline std::string getReponse(){return this->reponse;}
+    inline std::string getQuestion(){return this->question;}
 
 };
 
