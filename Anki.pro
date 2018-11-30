@@ -1,28 +1,34 @@
 #-------------------------------------------------
 #
-# Project created by QtCreator 2018-11-16T08:25:23
+# Project created by QtCreator 2018-11-26T11:34:06
 #
 #-------------------------------------------------
 
 QT       += core
 
-QT       -= gui
+
+greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 
 TARGET = Anki
-CONFIG   += console
-CONFIG   -= app_bundle
-
 TEMPLATE = app
 
 
-SOURCES += main.cpp \
-    utilisateur.cpp \
-    carte.cpp \
+SOURCES += main.cpp\
+        mainwindow.cpp \
     administrateur.cpp \
-    jeudecartes.cpp
+    carte.cpp \
+    GestionnaireAnki.cpp \
+    jeuDeCartes.cpp \
+    utilisateur.cpp
 
-HEADERS += \
-    utilisateur.h \
-    carte.h \
+HEADERS  += mainwindow.h\
     administrateur.h \
-    jeudecartes.h
+    carte.h \
+    GestionnaireAnki.h \
+    jeuDeCartes.h \
+    utilisateur.h
+
+FORMS    += mainwindow.ui
+
+RESOURCES += \
+    data.qrc

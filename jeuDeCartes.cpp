@@ -1,5 +1,6 @@
 #include "jeuDeCartes.h"
 #include<strings.h>
+#include"carte.h"
 using namespace std;
 JeuDeCartes::JeuDeCartes(string name):nom(name)
 {
@@ -10,14 +11,12 @@ void JeuDeCartes::ajouterCarte(Carte const & c)
 {
     this->lesCartes.push_back(c);
 }
-Carte JeuDeCartes::getCarte(string const &question)
+
+int JeuDeCartes::getNombreCarte()
 {
-    for(int i=0;i<lesCartes.size();i++)
-    {
-        Carte carte=lesCartes[i];
-        if(carte.getQuestion()==question)
-        {
-        return carte;
-        }
-    }
+    return lesCartes.size();
+}
+Carte JeuDeCartes::getCarte(int nocarte)
+{
+    return lesCartes[nocarte];
 }
